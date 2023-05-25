@@ -20,3 +20,12 @@ void userName(int a, string text) // Принимает, ничего не во�
     }
 }
 userName(text: "Какой-то текст...", a: 5);
+
+// Method 3
+
+int MethodTime() // Ничего не принимает, возвращает.
+{
+    return DateTime.Now.Year;
+}
+int year = MethodTime();
+Console.WriteLine(year);
