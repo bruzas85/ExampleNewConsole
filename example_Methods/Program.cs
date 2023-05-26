@@ -29,3 +29,20 @@ int MethodTime() // Ничего не принимает, возвращает.
 }
 int year = MethodTime();
 Console.WriteLine(year);
+
+// Method 4
+
+string Method(int count, string text)
+{
+    int i = 0;
+    string result = String.Empty; // Способ указать пустую строку
+    while (i < count)
+    {
+        result = result + text;
+        i++;
+    }
+    
+    return result;
+}
+string res = Method(text: "На его месте должен был быть я! ", count: 5);
+Console.WriteLine(res);
