@@ -20,5 +20,13 @@ if (firstResult >= 5)
         secondResult = 0;
     }
 }
-result = Convert.ToSingle(firstResult)+Convert.ToSingle(secondResult)/10;
+result = Convert.ToSingle(firstResult) + Convert.ToSingle(secondResult) / 10;
+Console.Write(result);
+
+// Округляем числа при делении встроенной функцией Math.Round
+
+int firstNumber = 77;
+int secondNumber = 9;
+double result;
+result = Math.Round(Convert.ToDouble(firstNumber) / Convert.ToDouble(secondNumber), 3);
 Console.Write(result);
