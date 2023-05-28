@@ -38,3 +38,24 @@ for (int j = 0; j < array1.Length; j++)
     }
 
 }
+
+// Сравниваем значение элементов 3-х массивов
+
+int[] numbers1 = { 82, 12, 34, 52 };
+int[] numbers2 = { 82, 21, 9, 16 };
+int[] numbers3 = { 44, 23, 11, 85 };
+for (int k = 0; k < numbers1.Length; k++)
+{
+    if (numbers1[k] > numbers2[k] && numbers1[k] > numbers3[k])
+    {
+    Console.WriteLine($"{numbers1[k]} больше!");
+    }
+    else if (numbers2[k] > numbers1[k] && numbers2[k] > numbers3[k])
+    {
+    Console.WriteLine($"{numbers2[k]} больше!");
+    }
+    else 
+    {
+        Console.WriteLine($"{numbers3[k]} больше!");
+    }
+}
